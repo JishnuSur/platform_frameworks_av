@@ -262,7 +262,7 @@ void CameraParameters::set(const char *key, const char *value)
     // The android SDK only wants one frame, so disable this unless the app
     // explicitly asks for it
     if (!get("hdr-need-1x")) {
-        mMap.replaceValueFor(String8("hdr-need-1x"), String8("false"));
+        mMap.replaceValueFor(String8("hdr-need-1x"), String8("true"));
     }
 #endif
 
